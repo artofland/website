@@ -6,12 +6,12 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - website',
-    title: 'website',
+    titleTemplate: '%s - Buy and Sell Metaverse Land',
+    title: 'Artof.Land',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Let your creativity take over, build without limit in your metaverse. Play with friends and the whole world' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
