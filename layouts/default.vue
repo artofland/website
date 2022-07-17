@@ -1,27 +1,51 @@
 <template>
   <v-app dark>
+    <v-toolbar style="background-color:rgba(0,0,0,0);" elevation="0">
+     <span class="hidden-sm-and-up">
+    </span>
+    <v-toolbar-title>
+      <router-link to="/" tag="span" style="cursor: pointer">
+        <img src="/img/logo-color.png" height="50px" />
+      </router-link>
+    </v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-xs-only">
+      <v-btn
+        text color="accent">
+          Buy lands
+      </v-btn>
+      <v-btn
+        text >
+          Map
+      </v-btn>
+      <v-btn
+        text >
+          Downloads
+      </v-btn>
+      <v-btn
+        text >
+          Sign/Login
+      </v-btn>
+    </v-toolbar-items>
+    </v-toolbar>
     <v-main>
-      <v-app-bar fixed style="background-color:rgba(0,0,0,0);" elevation="0" height="100" app>
-        <v-row>
-          <v-col cols="12" class="text-center">
-            <img height="50" src="/img/logo-color.png" />
-          </v-col>
-        </v-row>
-      </v-app-bar>
       <v-container fluid class="px-0">
         <v-carousel :show-arrows="false">
           <v-carousel-item src="/img/screenshot.png">
             <v-container>
             <v-row>
-              <v-col cols="12" md="6" class="py-16 mt-12">
+              <v-col cols="12" class="text-center">
+                <img src="/img/logo-color.png" height=100/>
+              </v-col>
+              <v-col cols="12" md="6" class="pb-16 mt-12">
                 <v-card class="rounded-lg pa-6">
                   <v-card-text>
                     <span class="text-h4">Claim your <span class="primary--text">LAND</span> for Free now</span>
                   </v-card-text>
                   <v-card-actions>
-                    <v-btn color="accent" class="font-weight-bold" width="200">Claim</v-btn>
+                    <v-btn color="accent" class="font-weight-bold">Claim</v-btn>
                     <v-spacer />
-                    <v-btn color="secondary" class="font-weight-bold" width="200">Play</v-btn>
+                    <v-btn color="secondary" class="font-weight-bold">Play</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-col> 
@@ -43,9 +67,10 @@
         </v-col>
         <v-col>
           Home <br>
+          Open source <br>
         </v-col>
         <v-col class="text-right">
-          <span class="font-weight-bold text-h5">
+          <span class="text-h5">
             Follow us
           </span>
           <br/>
