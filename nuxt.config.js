@@ -15,9 +15,13 @@ export default {
       { hid: 'description', name: 'description', content: 'Let your creativity take over, build without limit in your metaverse. Play with friends and the whole world' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    script:[
+      {src:'https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js'},
+      {src:'https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js'}
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: '//unpkg.com/leaflet@1.8.0/dist/leaflet.css' }
+      { rel: 'stylesheet', href: '//unpkg.com/leaflet@1.8.0/dist/leaflet.css' },
     ]
   },
 

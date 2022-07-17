@@ -48,7 +48,7 @@
                   <v-card-actions>
                     <v-btn color="accent" class="font-weight-bold">Claim</v-btn>
                     <v-spacer />
-                    <v-btn color="secondary" class="font-weight-bold">Play</v-btn>
+                    <v-btn color="secondary" class="font-weight-bold" to="/download">Play</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-col> 

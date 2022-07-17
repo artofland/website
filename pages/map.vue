@@ -9,8 +9,8 @@
                     <l-popup v-if="chunk.owner">
                         <v-card>
                             <v-card-text>
-                                <span class="text-h4">Owner</span><br/>
-                                <span class="text-h4 primary--text">@Simerca</span><br/>
+                                <span class="text-h4">Owner #</span> 
+                                <span class="text-h4 primary--text">{{chunk.owner}}</span><br/>
                             </v-card-text>
                         </v-card>
                     </l-popup>
