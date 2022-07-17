@@ -11,21 +11,24 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-xs-only">
       <v-btn
+      to="/marketplace"
         text color="accent">
           Buy lands
       </v-btn>
       <v-btn
+      to="/map"
         text >
           Map
       </v-btn>
       <v-btn
+      to="/download"
         text >
           Downloads
       </v-btn>
-      <v-btn
+      <!-- <v-btn
         text >
           Sign/Login
-      </v-btn>
+      </v-btn> -->
     </v-toolbar-items>
     </v-toolbar>
     <v-main>
@@ -66,20 +69,20 @@
           <img width="200px" src="/img/logo-white.png"/>
         </v-col>
         <v-col>
-          Home <br>
-          Open source <br>
+          <a to="/">Home</a> <br>
+           <a style="text-decoration: none;" href="https://github.com/artofland" target="_blank"><v-icon>mdi-github</v-icon>Github</a>  <br>
         </v-col>
         <v-col class="text-right">
           <span class="text-h5">
             Follow us
           </span>
           <br/>
-          <v-btn icon>
+          <v-btn href="https://discord.gg/8gtqn2v9Zu" target="_blank" icon>
             <v-icon>mdi-discord</v-icon>
           </v-btn>
-          <v-btn icon>
+          <!-- <v-btn icon>
             <v-icon>mdi-twitter</v-icon>
-            </v-btn>
+            </v-btn> -->
         </v-col>
       </v-row>
     </v-container>
@@ -124,8 +127,9 @@ $title-font: 'Alfa Slab One';
 
 .v-application {
    font-family: $body-font-family, sans-serif !important;
-    .title, .text-h1, .text-h2,.text-h3,.text-h4,.text-h5 { // To pin point specific classes of some components
+    .title, .text-h1, .text-h2,.text-h3,.text-h4,.text-h5, h1, h2, h3, h4, h5 { // To pin point specific classes of some components
        font-family: $title-font, sans-serif !important;
+       font-weight: normal;
     }
  }
 

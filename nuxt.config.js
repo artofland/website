@@ -1,5 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -15,7 +16,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'stylesheet', href: '//unpkg.com/leaflet@1.8.0/dist/leaflet.css' }
     ]
   },
 
@@ -25,6 +27,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src:'~/plugins/vue-konva.js', mode:'client'},
+    {src:'~/plugins/vue2-leaflet.js', mode:'client'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
