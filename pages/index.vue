@@ -8,7 +8,7 @@
       </v-row>
       <v-row>
         <v-col cols="12" md="4" class="text-right" v-for="i in assets" :key="i.id">
-          <v-card class="rounded">
+          <v-card :href="i.permalink" class="rounded">
             <v-img v-if="i.image_url" :src="i.image_url" />
           </v-card>
           <a style="text-decoration: none;" :href="i.permalink">Get it on OpenSea<v-icon>mdi-arrow-right</v-icon></a>
