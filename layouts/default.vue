@@ -18,6 +18,11 @@
         </v-col >
         <v-col class="pt-5 text-right d-none d-md-block">
           <v-btn
+          to="/register"
+            text>
+              Register
+          </v-btn>
+          <v-btn
             target="_blank"
             href="https://opensea.io/collection/waterworld-artofland"
             large color="accent">

@@ -25,7 +25,7 @@
             </span>
             <v-divider class="mt-12"/>
             <v-btn color="accent" @click="getPublicKey()" block>
-              <img contain height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png"></v-img>Connect Metamask
+              <img contain height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png"/>Connect Metamask
             </v-btn>
             <v-col class="text-right">
               <a style="text-decoration: none;" target="_blank" href="https://metamask.io/">Install Metamask</a>
