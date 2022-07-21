@@ -11,7 +11,7 @@
           <v-card class="rounded">
             <v-img v-if="i.image_url" :src="i.image_url" />
           </v-card>
-          <a style="text-decoration: none;" :href="i.permalink">Get on OpenSea <v-icon>mdi-arrow-right</v-icon></a>
+          <a style="text-decoration: none;" :href="i.permalink">Get it on OpenSea<v-icon>mdi-arrow-right</v-icon></a>
         </v-col>
       </v-row>
     </v-container>
