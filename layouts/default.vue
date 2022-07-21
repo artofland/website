@@ -52,15 +52,15 @@
     >
     <v-container class="py-12">
       <v-row class="py-12">
-        <v-col cols=12 md="3" class="text-center text-md-left">
+        <v-col cols=12 md="4" class="text-center text-md-left">
           <img width="200px" src="/img/logo-white.png"/>
         </v-col>
-        <v-col cols="12" md="3"  class="text-center text-md-left">
+        <v-col cols="12" md="4"  class="text-center text-md-left">
           <a class="white--text" to="/">Home</a> <br>
            <a class="white--text" style="text-decoration: none;" href="https://github.com/artofland" target="_blank">Github</a>  <br>
            <a class="white--text" style="text-decoration: none;" href="https://opensea.io/collection/waterworld-artofland" target="_blank">OpenSea</a>  <br>
         </v-col>
-        <v-col  class="text-center text-md-right" cols="12" md="3">
+        <v-col  class="text-center text-md-right" cols="12" md="4">
           <span class="text-h5">
             Follow us
           </span>
