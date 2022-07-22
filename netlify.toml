@@ -36,3 +36,8 @@
   to = "/.well-known/apple-app-site-association.json"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
