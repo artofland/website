@@ -7,38 +7,48 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" md="4" class="text-right" v-for="i in assets" :key="i.id">
+        <v-col cols="12" md="3" class="text-right displayBox" data-aos="zoom-in" data-aos-easing="ease-in" v-for="i in assets" :key="i.id">
           <v-card :href="i.permalink" class="rounded">
             <v-img v-if="i.image_url" :src="i.image_url" />
           </v-card>
+
+          <span>{{i.name}}</span> <br/>
+
           <a style="text-decoration: none;" :href="i.permalink">Get it on OpenSea<v-icon>mdi-arrow-right</v-icon></a>
         </v-col>
       </v-row>
     </v-container>
 
-    <v-sheet class="mt-16 py-16" style="position:relative; background-image:url('/img/background-header.png');" id="claimland">
-      <v-col cols="10" md="8" class="mx-auto py-16">
-        <v-card class="rounded-lg px-0 px-md-12">
-          <v-card-text class="pa-12 px-6 px-md-16 text-center">
+    <v-sheet class="mt-16 py-16 backoverlay" style="position:relative; background-image:url('/img/capture-1.png'); background-size:cover; background-position:center;" id="claimland">
+      <v-col cols="10" md="6" class="mx-auto py-16">
+        <v-row class="rounded-lg px-0 px-md-12"  data-aos="zoom-in" data-aos-easing="ease-in" >
+          <v-col cols="12" md="6">
             <span class="title">
-              For limited time we offer to you a <span class="primary--text">LAND</span>
+              Get your FREE <span class="primary--text">LAND</span>
             </span>
-            <v-divider class="mt-12"/>
-            <v-btn color="accent" @click="getPublicKey()" block>
+            <br/>
+            <br/>
+            <span>
+              For limited time you can claim a Free LAND to start build on Artof.LAND Metaverse
+            </span>
+
+            <v-btn class="mt-6" color="accent" @click="getPublicKey()" block>
               <img contain height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png"/>Connect Metamask
             </v-btn>
-            <v-col class="text-right">
-              <a style="text-decoration: none;" target="_blank" href="https://metamask.io/">Install Metamask</a>
-            </v-col>
-          </v-card-text>
-        </v-card>
+            <a style="text-decoration: none;" target="_blank" href="https://metamask.io/">Install Metamask</a>
+
+          </v-col>
+          <v-col cols="12" md="6">
+            <v-img contain height="200" src="/img/nft-base.png"/>
+          </v-col>
+        </v-row>
       </v-col>
     </v-sheet>
 
     <v-container class="mt-12 py-12"
       style="background-image: url('/img/community-background.png');background-position: center;background-size: contain;">
       <v-row>
-        <v-col cols=8 class="text-center mx-auto">
+        <v-col cols=8 class="text-center mx-auto"  data-aos="zoom-in" data-aos-easing="ease-in" >
           <span class="text-h4 ">Join our <span class="primary--text">Community</span></span>
         </v-col>
         <v-col cols="8" class="py-16 my-16 mx-auto">
@@ -49,10 +59,10 @@
       </v-row>
     </v-container>
 
-    <v-sheet class="mt-12 py-16" style="background-image:url('/img/background-header.png')">
-      <v-container class="py-16">
-        <v-row>
-          <v-col class="text-center" cols="12">
+    <v-sheet class="mt-12 py-16 backoverlay" style="position:relative; background-image:url('/img/capture-2.png'); background-size:cover; background-position:center;">
+      <v-container class="py-16 " >
+        <v-row class="py-16">
+          <v-col class="text-center" cols="12"  data-aos="zoom-in" data-aos-easing="ease-in" >
             <span class="text-h3">Join our <span class="primary--text">World</span></span>
           </v-col>
           <v-col cols="12" md="6" class="text-center mt-12">
@@ -100,6 +110,10 @@ export default {
         contract: '0x495f947276749ce646f68ac8c248420045cb7b5e',
         token: '40868789574586488834959443052281218598274334533160055729397296235837053206529',
       },
+      {
+        contract: '0x495f947276749ce646f68ac8c248420045cb7b5e',
+        token: '40868789574586488834959443052281218598274334533160055729397296429351099695105',
+      },
     ],
     assets: [],
     offerTime: null,
@@ -146,3 +160,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.backoverlay:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgb(0 17 126 / 50%);
+}
+</style>

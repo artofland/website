@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar class="text-center">
+    <v-app-bar class="text-center black">
       <v-container>
       <v-row>
         <v-col class="pt-6 text-left d-none d-md-block">
@@ -35,9 +35,13 @@
     <v-main>
       <v-container fluid class="px-0">
         <v-carousel :show-arrows="false">
-          <v-carousel-item src="/img/background-header.png">
+        <video class="d-none d-md-block" style="position:absolute; top:-300px" id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
+            <source src="/waterworld-metaverse-launch-artofland.webm" type="video/webm">
+        </video> 
+          <!-- <v-carousel-item > -->
+          <v-carousel-item :src="$vuetify.breakpoint.mobile ? `/img/background-header.png` :''">
             <v-container>
-            <v-row class="py-16">
+              <v-row class="py-16">
               <v-col cols="12" md="8" class="py-16">
                 <span class="text-h5 text-md-h3 primary--text">NEW WORLD</span><br/>
                 <span class="text-h5 text-md-h3">WATERWORLD</span><br/>
