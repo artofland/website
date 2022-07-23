@@ -63,10 +63,10 @@
           <img width="200px" src="/img/logo-white.png"/>
         </v-col>
         <v-col cols="12" md="4"  class="text-center text-md-left">
-          <a class="white--text" to="/">Home</a> <br>
+          <router-link tag="a" style="text-decoration: none;" class="white--text" to="/">Home</router-link> <br>
            <a class="white--text" style="text-decoration: none;" href="https://github.com/artofland" target="_blank">Github</a>  <br>
            <a class="white--text" style="text-decoration: none;" href="https://opensea.io/collection/waterworld-artofland" target="_blank">OpenSea</a>  <br>
-           <a class="white--text" style="text-decoration: none;" to="/terms">Terms of use</a>  <br>
+           <router-link tag="a" class="white--text" style="text-decoration: none;" to="/terms">Terms of use</router-link>  <br>
         </v-col>
         <v-col  class="text-center text-md-right" cols="12" md="4">
           <span class="text-h5">
