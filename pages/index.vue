@@ -2,8 +2,12 @@
   <v-container fluid class="px-0">
     <v-container>
       <v-row>
+        <v-col cols="12" class="text-center">
+          <h1 class="primary--text">Artof.Land</h1>
+          <h2>Get a Land in our Metaverse easier</h2>
+        </v-col>
         <v-col cols="12" class="text-center my-6">
-          <span class="title">LANDS</span> <br />
+          <span class="title">GET <span class="primary--text">LANDS</span></span> <br />
         </v-col>
       </v-row>
       <v-row>

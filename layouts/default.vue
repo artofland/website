@@ -56,9 +56,7 @@
       </v-container>
         <Nuxt />
     </v-main>
-    <v-footer
-
-    >
+    <v-footer>
     <v-container class="py-12">
       <v-row class="py-12">
         <v-col cols=12 md="4" class="text-center text-md-left">
