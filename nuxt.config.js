@@ -12,7 +12,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Let your creativity take over, build without limit in your metaverse. Play with friends and the whole world' },
+      { hid: 'description', name: 'description', content: 'Let your creativity take over, build without limit in your metaverse. Play with friends and the whole world, buy and sell LAND NFT' },
       { name: 'format-detection', content: 'telephone=no' },
       { hid: 'og-title', property: 'og:site_name', content: 'Artof.Land Buy and Sell Metaverse Land' },
       { hid: 't-type', property: 'twitter:title', content: 'Artof.Land Buy and Sell Metaverse Land' },
