@@ -39,6 +39,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'stylesheet', href: '//unpkg.com/leaflet@1.8.0/dist/leaflet.css' },
       { rel: 'stylesheet', href: 'https://unpkg.com/aos@2.3.1/dist/aos.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' },
     ]
   },
 

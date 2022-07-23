@@ -35,7 +35,7 @@
     <v-main>
       <v-container fluid class="px-0">
         <v-carousel :show-arrows="false">
-        <video class="d-none d-md-block" style="position:absolute; top:-300px" id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
+        <video class="d-none d-md-block" style="width:100%;position:absolute; top:-300px" id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
             <source src="/waterworld-metaverse-launch-artofland.webm" type="video/webm">
         </video> 
           <!-- <v-carousel-item > -->
@@ -116,7 +116,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 $body-font-family: 'Montserrat';
 $title-font: 'Alfa Slab One';
