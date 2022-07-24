@@ -64,6 +64,7 @@
         </v-col>
         <v-col cols="12" md="4"  class="text-center text-md-left">
           <router-link tag="a" style="text-decoration: none;" class="white--text" to="/">Home</router-link> <br>
+          <router-link tag="a" style="text-decoration: none;" class="white--text" to="/map">Waterworld Map</router-link> <br>
            <a class="white--text" style="text-decoration: none;" href="https://github.com/artofland" target="_blank">Github</a>  <br>
            <a class="white--text" style="text-decoration: none;" href="https://opensea.io/collection/waterworld-artofland" target="_blank">OpenSea</a>  <br>
            <router-link tag="a" class="white--text" style="text-decoration: none;" to="/terms">Terms of use</router-link>  <br>
