@@ -16,6 +16,9 @@
         <p><span><span><span>Nothing of your information is used to make stats or anything
                         else.&nbsp;</span></span></span></p>
 
+        <img src="/blacklight-result.png" alt="blacklight result" /><br/>
+        <a href="https://themarkup.org/blacklight?url=artof.land" target="_blank">See Blacklight Result from Thememarkup.org</a>
+
         <p>&nbsp;</p>
 
         <p><span><span><span>Therefore, we ask you to follow certain rules inside our metaverse,</span></span></span>
