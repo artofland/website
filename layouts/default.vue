@@ -6,8 +6,7 @@
         <v-col class="pt-6 text-left d-none d-md-block">
           <v-btn
           to="/"
-
-            text color="white">
+            text class="font-weight-bold" color="white">
               Home
           </v-btn>
         </v-col>
@@ -17,13 +16,34 @@
           </router-link>
         </v-col >
         <v-col class="pt-5 text-right d-none d-md-block">
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                text
+                v-bind="attrs"
+                v-on="on"
+                class="font-weight-bold"
+              >
+                World <v-icon small>mdi-chevron-down</v-icon>
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item
+              to="/waterworld"
+              >
+                <v-list-item-title>Waterworld</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
           <v-btn
           to="/register"
+          class="font-weight-bold"
             text>
               Register
           </v-btn>
           <v-btn
             target="_blank"
+            class="font-weight-bold"
             href="https://opensea.io/collection/waterworld-artofland"
             large color="accent">
               Buy lands
@@ -59,17 +79,21 @@
     <v-footer>
     <v-container class="py-12">
       <v-row class="py-12">
-        <v-col cols=12 md="4" class="text-center text-md-left">
+        <v-col cols=12 md="3" class="text-center text-md-left">
           <img width="200px" src="/img/logo-white.png"/>
         </v-col>
-        <v-col cols="12" md="4"  class="text-center text-md-left">
+        <v-col cols="12" md="3"  class="text-center text-md-left">
+          <span class="text-h5">Menu</span><br/>
           <router-link tag="a" style="text-decoration: none;" class="white--text" to="/">Home</router-link> <br>
-          <router-link tag="a" style="text-decoration: none;" class="white--text" to="/map">Waterworld Map</router-link> <br>
+          <router-link tag="a" style="text-decoration: none;" class="white--text" to="/waterworld">Waterworld Map</router-link> <br>
            <a class="white--text" style="text-decoration: none;" href="https://github.com/artofland" target="_blank">Github</a>  <br>
            <a class="white--text" style="text-decoration: none;" href="https://opensea.io/collection/waterworld-artofland" target="_blank">OpenSea</a>  <br>
+        </v-col>
+        <v-col cols="12" md="3"  class="text-center text-md-left">
+          <span class="text-h5">About</span><br/>
            <router-link tag="a" class="white--text" style="text-decoration: none;" to="/terms">Terms of use</router-link>  <br>
         </v-col>
-        <v-col  class="text-center text-md-right" cols="12" md="4">
+        <v-col  class="text-center text-md-right" cols="12" md="3">
           <span class="text-h5">
             Follow us
           </span>

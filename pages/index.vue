@@ -15,10 +15,11 @@
           <v-card :href="i.permalink" class="rounded">
             <v-img v-if="i.image_url" :src="i.image_url" />
           </v-card>
-
-          <span>{{i.name}}</span> <br/>
-
-          <a style="text-decoration: none;" :href="i.permalink">Get it on OpenSea<v-icon>mdi-arrow-right</v-icon></a>
+          <v-col class="text-left">
+            <small class="font-weight-bold accent--text">LANDS</small> <br/>
+            <span class="font-weight-bold">{{i.name}}</span> <br/>
+            <a style="text-decoration: none;" :href="i.permalink">Get it on OpenSea<v-icon small>mdi-arrow-right</v-icon></a>
+          </v-col>
         </v-col>
       </v-row>
     </v-container>
